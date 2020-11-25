@@ -23,7 +23,11 @@ namespace Interdisciplinary.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Wheel()
+        {
+            return View();
+        }
+        public IActionResult Fridge()
         {
             return View();
         }

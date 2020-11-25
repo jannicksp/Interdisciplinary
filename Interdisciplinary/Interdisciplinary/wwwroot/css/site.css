@@ -23,11 +23,29 @@ a {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+.navbar-brand{
+    text-align:center;
+    color: white;
+}
+.nav-item {
+    border: white 1px solid;
+    width: 100%;
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
   font-size: 14px;
+}
+body {
+    background-image: url("https://cdn.hipwallpaper.com/i/49/27/wHUIXq.jpg");
+    background-position: center;
+    background-size: cover;
 }
 @media (min-width: 768px) {
   html {
@@ -63,9 +81,19 @@ body {
   margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+header{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+}
+.form-inline {
+    display: flex;
+    justify-content: center;
+}
+.flex-grow-1 {
+    flex-direction: row;
 }
