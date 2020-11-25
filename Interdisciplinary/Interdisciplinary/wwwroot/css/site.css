@@ -11,6 +11,9 @@ a.navbar-brand {
 a {
   color: #0366d6;
 }
+ a.text-dark:focus, a.text-dark:hover {
+        background: white;
+    }
 
 .btn-primary {
   color: #fff;
