@@ -26,9 +26,13 @@ a {
 .navbar-brand{
     text-align:center;
     color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
 }
 .nav-item {
-    border: white 1px solid;
+    border-top: white 1px solid;
+    border-left: white 1px solid;
+    border-right: white 1px solid;
     width: 100%;
     text-align: center;
     background-color: black;
@@ -44,7 +48,10 @@ html {
   font-size: 14px;
 }
 body {
-    background-image: url("https://cdn.hipwallpaper.com/i/49/27/wHUIXq.jpg");
+    color: white;
+}
+body {
+    background-image: url("https://www.cdn.alt.dk/3e218e7ea295472b88c72856da6c406c/6698469aba934a6a9095be3433629901.jpg");
     background-position: center;
     background-size: cover;
 }
