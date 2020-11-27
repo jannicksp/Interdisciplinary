@@ -11,6 +11,11 @@ a.navbar-brand {
 a {
   color: #0366d6;
 }
+a:hover {
+color: #D56868 !important;
+}
+
+
  a.text-dark:focus, a.text-dark:hover {
         background: white;
     }
@@ -107,4 +112,16 @@ header{
 }
 .flex-grow-1 {
     flex-direction: row;
+}
+
+.ingridiens {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: flex-start;
+}
+.ingridiens li::before {
+    content: "✖";
+    width: 10px;
+    height: 10px;
 }
