@@ -13,8 +13,8 @@ namespace Interdisciplinary.Models
         public string Password { get; set; }
         public string Email { get; set; }
 
-        public ICollection<Drink> Drinks { get; set; }
-
+       
+        public Customer() { }
 
         public Customer(int customerId, string username, string password, string email) {
             CustomerId = customerId;
