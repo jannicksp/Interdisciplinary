@@ -1,8 +1,5 @@
 C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
-C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
 C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\bin\Debug\netcoreapp3.1\Interdisciplinary.StaticWebAssets.xml
 C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\bin\Debug\netcoreapp3.1\Interdisciplinary.exe
 C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\bin\Debug\netcoreapp3.1\Interdisciplinary.deps.json
@@ -188,3 +185,4 @@ C:\Users\annal\OneDrive\Documents\BAAA\ID\Interdisciplinary\Interdisciplinary\ob
 C:\Users\annal\OneDrive\Documents\BAAA\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.dll
 C:\Users\annal\OneDrive\Documents\BAAA\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.pdb
 C:\Users\annal\OneDrive\Documents\BAAA\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.genruntimeconfig.cache
+C:\Users\User\source\repos\interdisciplinary\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\scopedcss\bundle\Interdisciplinary.styles.css
