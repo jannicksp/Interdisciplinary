@@ -255,7 +255,7 @@ namespace Interdisciplinary.Data
                   new DrinkIngredient { DrinkId = 10, IngredientId = 11, Amount = "2cl" },
                   new DrinkIngredient { DrinkId = 11, IngredientId = 5, Amount = "2cl" },
                   new DrinkIngredient { DrinkId = 11, IngredientId = 13, Amount = "1cl" },
-                  new DrinkIngredient { DrinkId = 11, IngredientId = 8, Amount = "4cl" },
+                  new DrinkIngredient { DrinkId = 11, IngredientId = 8, Amount = "4cl" }
                  
 
                   );
