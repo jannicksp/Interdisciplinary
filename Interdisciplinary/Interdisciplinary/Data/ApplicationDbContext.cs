@@ -24,6 +24,7 @@ namespace Interdisciplinary.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             //if we wanted to override default naming behaviour, and name table "Customer" instead of "Customers" for example
             //modelBuilder.Entity<Customer>().ToTable("Customer");
             //modelBuilder.Entity<Drink>().ToTable("Drink");
@@ -218,45 +219,45 @@ namespace Interdisciplinary.Data
                     );
 
             modelBuilder.Entity<DrinkIngredient>().HasData(
-                  new DrinkIngredient { DrinkId = 1, IngredientId = 4, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 1, IngredientId = 8, Amount = "6cl" },
-                  new DrinkIngredient { DrinkId = 1, IngredientId = 18, Amount = "" },
-                  new DrinkIngredient { DrinkId = 2, IngredientId = 2, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 2, IngredientId = 9, Amount = "6cl" },
-                  new DrinkIngredient { DrinkId = 2, IngredientId = 18, Amount = "" },
-                  new DrinkIngredient { DrinkId = 3, IngredientId = 1, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 3, IngredientId = 7, Amount = "6cl" },
-                  new DrinkIngredient { DrinkId = 3, IngredientId = 18, Amount = "" },
-                  new DrinkIngredient { DrinkId = 3, IngredientId = 20, Amount = "3 slices" },
-                  new DrinkIngredient { DrinkId = 4, IngredientId = 5, Amount = "4cl" },
-                  new DrinkIngredient { DrinkId = 4, IngredientId = 6, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 4, IngredientId = 11, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 4, IngredientId = 21, Amount = "For the rim" },
-                  new DrinkIngredient { DrinkId = 4, IngredientId = 19, Amount = "Fill as desired" },
-                  new DrinkIngredient { DrinkId = 5, IngredientId = 4, Amount = "3cl" },
-                  new DrinkIngredient { DrinkId = 5, IngredientId = 6, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 5, IngredientId = 11, Amount = "1cl" },
-                  new DrinkIngredient { DrinkId = 5, IngredientId = 14, Amount = "1cl" },
-                  new DrinkIngredient { DrinkId = 6, IngredientId = 1, Amount = "5cl" },
-                  new DrinkIngredient { DrinkId = 6, IngredientId = 16, Amount = "1cl" },
-                  new DrinkIngredient { DrinkId = 6, IngredientId = 22, Amount = "1-3" },
-                  new DrinkIngredient { DrinkId = 7, IngredientId = 4, Amount = "5cl" },
-                  new DrinkIngredient { DrinkId = 7, IngredientId = 16, Amount = "1cl" },
-                  new DrinkIngredient { DrinkId = 7, IngredientId = 22, Amount = "1-3" },
-                  new DrinkIngredient { DrinkId = 8, IngredientId = 3, Amount = "4cl" },
-                  new DrinkIngredient { DrinkId = 8, IngredientId = 11, Amount = "1cl" },
-                  new DrinkIngredient { DrinkId = 8, IngredientId = 15, Amount = "0.5cl" },
-                  new DrinkIngredient { DrinkId = 8, IngredientId = 23, Amount = "3" },
-                  new DrinkIngredient { DrinkId = 9, IngredientId = 17, Amount = "4cl" },
-                  new DrinkIngredient { DrinkId = 9, IngredientId = 12, Amount = "1cl" },
-                  new DrinkIngredient { DrinkId = 9, IngredientId = 24, Amount = "1 teaspoon" },
-                  new DrinkIngredient { DrinkId = 10, IngredientId = 3, Amount = "4cl" },
-                  new DrinkIngredient { DrinkId = 10, IngredientId = 15, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 10, IngredientId = 11, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 11, IngredientId = 5, Amount = "2cl" },
-                  new DrinkIngredient { DrinkId = 11, IngredientId = 13, Amount = "1cl" },
-                  new DrinkIngredient { DrinkId = 11, IngredientId = 8, Amount = "4cl" }
-                 
+                  new DrinkIngredient { DrinkIngredientId = 1, DrinkId = 1, IngredientId = 4, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 2, DrinkId = 1, IngredientId = 8, Amount = "6cl" },
+                  new DrinkIngredient { DrinkIngredientId = 3, DrinkId = 1, IngredientId = 18, Amount = "" },
+                  new DrinkIngredient { DrinkIngredientId = 4, DrinkId = 2, IngredientId = 2, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 5, DrinkId = 2, IngredientId = 9, Amount = "6cl" },
+                  new DrinkIngredient { DrinkIngredientId = 6, DrinkId = 2, IngredientId = 18, Amount = "" },
+                  new DrinkIngredient { DrinkIngredientId = 7, DrinkId = 3, IngredientId = 1, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 8, DrinkId = 3, IngredientId = 7, Amount = "6cl" },
+                  new DrinkIngredient { DrinkIngredientId = 9, DrinkId = 3, IngredientId = 18, Amount = "" },
+                  new DrinkIngredient { DrinkIngredientId = 10, DrinkId = 3, IngredientId = 20, Amount = "3 slices" },
+                  new DrinkIngredient { DrinkIngredientId = 11, DrinkId = 4, IngredientId = 5, Amount = "4cl" },
+                  new DrinkIngredient { DrinkIngredientId = 12, DrinkId = 4, IngredientId = 6, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 13, DrinkId = 4, IngredientId = 11, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 14, DrinkId = 4, IngredientId = 21, Amount = "For the rim" },
+                  new DrinkIngredient { DrinkIngredientId = 15, DrinkId = 4, IngredientId = 19, Amount = "Fill as desired" },
+                  new DrinkIngredient { DrinkIngredientId = 16, DrinkId = 5, IngredientId = 4, Amount = "3cl" },
+                  new DrinkIngredient { DrinkIngredientId = 17, DrinkId = 5, IngredientId = 6, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 18, DrinkId = 5, IngredientId = 11, Amount = "1cl" },
+                  new DrinkIngredient { DrinkIngredientId = 19, DrinkId = 5, IngredientId = 14, Amount = "1cl" },
+                  new DrinkIngredient { DrinkIngredientId = 20, DrinkId = 6, IngredientId = 1, Amount = "5cl" },
+                  new DrinkIngredient { DrinkIngredientId = 21, DrinkId = 6, IngredientId = 16, Amount = "1cl" },
+                  new DrinkIngredient { DrinkIngredientId = 22, DrinkId = 6, IngredientId = 22, Amount = "1-3" },
+                  new DrinkIngredient { DrinkIngredientId = 23, DrinkId = 7, IngredientId = 4, Amount = "5cl" },
+                  new DrinkIngredient { DrinkIngredientId = 24, DrinkId = 7, IngredientId = 16, Amount = "1cl" },
+                  new DrinkIngredient { DrinkIngredientId = 25, DrinkId = 7, IngredientId = 22, Amount = "1-3" },
+                  new DrinkIngredient { DrinkIngredientId = 26, DrinkId = 8, IngredientId = 3, Amount = "4cl" },
+                  new DrinkIngredient { DrinkIngredientId = 27, DrinkId = 8, IngredientId = 11, Amount = "1cl" },
+                  new DrinkIngredient { DrinkIngredientId = 28, DrinkId = 8, IngredientId = 15, Amount = "0.5cl" },
+                  new DrinkIngredient { DrinkIngredientId = 29, DrinkId = 8, IngredientId = 23, Amount = "3" },
+                  new DrinkIngredient { DrinkIngredientId = 30, DrinkId = 9, IngredientId = 17, Amount = "4cl" },
+                  new DrinkIngredient { DrinkIngredientId = 31, DrinkId = 9, IngredientId = 12, Amount = "1cl" },
+                  new DrinkIngredient { DrinkIngredientId = 32, DrinkId = 9, IngredientId = 24, Amount = "1 teaspoon" },
+                  new DrinkIngredient { DrinkIngredientId = 33, DrinkId = 10, IngredientId = 3, Amount = "4cl" },
+                  new DrinkIngredient { DrinkIngredientId = 34, DrinkId = 10, IngredientId = 15, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 35, DrinkId = 10, IngredientId = 11, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 36, DrinkId = 11, IngredientId = 5, Amount = "2cl" },
+                  new DrinkIngredient { DrinkIngredientId = 37, DrinkId = 11, IngredientId = 13, Amount = "1cl" },
+                  new DrinkIngredient { DrinkIngredientId = 38, DrinkId = 11, IngredientId = 8, Amount = "4cl" }
+
 
                   );
 

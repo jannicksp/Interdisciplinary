@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {}
+    "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {
+    "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
         "projectName": "Interdisciplinary",
-        "projectPath": "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,28 +37,50 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Identity": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.7, )"
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.NETCore.Platforms": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

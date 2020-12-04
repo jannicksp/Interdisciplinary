@@ -12,7 +12,8 @@ namespace Interdisciplinary.Models
         public bool IsCreated { get; set; } = false;
 
         //public ICollection<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
-        public ICollection<Ingredient> Ingredients { get; set; } 
+        //navigation property
+        //public virtual ICollection<Ingredient> Ingredients { get; set; } 
 
         //navigation property will create a foreign key
       public Customer Customer { get; set; }
@@ -23,7 +24,7 @@ namespace Interdisciplinary.Models
         {
             DrinkId = drinkId;
             Name = name;
-            Ingredients = ingredients;
+            //Ingredients = ingredients;
         }
 
     }
