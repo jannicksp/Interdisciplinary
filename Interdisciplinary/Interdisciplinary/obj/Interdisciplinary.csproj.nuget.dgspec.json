@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {}
+    "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {
+    "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
         "projectName": "Interdisciplinary",
-        "projectPath": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\IDvirkerikk\\ID\\Interdisciplinary\\Interdisciplinary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,14 +51,6 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[3.1.7, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
