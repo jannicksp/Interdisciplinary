@@ -119,6 +119,7 @@ header{
     margin-left: 0;
     padding-left: 0;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .ingridiens li::before {
     content: "✖";

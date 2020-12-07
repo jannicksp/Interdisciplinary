@@ -1,7 +1,0 @@
-C:\Users\Jes\Dropbox\Min computer (DESKTOP-AU55U4K)\Downloads\IDvirkerikk\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.csprojAssemblyReference.cache
-C:\Users\Jes\Dropbox\Min computer (DESKTOP-AU55U4K)\Downloads\IDvirkerikk\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.AssemblyInfoInputs.cache
-C:\Users\Jes\Dropbox\Min computer (DESKTOP-AU55U4K)\Downloads\IDvirkerikk\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.AssemblyInfo.cs
-C:\Users\Jes\Dropbox\Min computer (DESKTOP-AU55U4K)\Downloads\IDvirkerikk\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.csproj.CoreCompileInputs.cache
-C:\Users\Jes\Dropbox\Min computer (DESKTOP-AU55U4K)\Downloads\IDvirkerikk\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Jes\Dropbox\Min computer (DESKTOP-AU55U4K)\Downloads\IDvirkerikk\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.RazorAssemblyInfo.cache
-C:\Users\Jes\Dropbox\Min computer (DESKTOP-AU55U4K)\Downloads\IDvirkerikk\ID\Interdisciplinary\Interdisciplinary\obj\Debug\netcoreapp3.1\Interdisciplinary.RazorAssemblyInfo.cs

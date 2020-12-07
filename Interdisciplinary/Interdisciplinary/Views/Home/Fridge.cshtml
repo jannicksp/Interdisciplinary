@@ -9,9 +9,15 @@
 <label for="ingridiens">Vælg hvilke ingredienser du har tilgængelige til at lave drinks med</label>
 <br/>
 <select id="ingridiens">
-<option> Vælg ingredienser</option>
-<option> agurk</option>
+    <option> Vælg ingredienser</option>
+    @foreach (Ingredient ingredient in ViewBag.Ingredients)
+    {
+        <option>
+            @ingredient.Name;
+        </option>
+    }
 </select>
+
 <button>Tilføj ingrediens</button>
 <br/>
 

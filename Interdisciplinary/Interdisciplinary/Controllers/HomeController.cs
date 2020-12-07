@@ -21,5 +21,15 @@ namespace Interdisciplinary.Controllers
             ViewBag.Drinks = dataContext.Drinks;
             return View();
         }
+        public IActionResult Wheel()
+        {
+            return View();
+        }
+        public IActionResult Fridge()
+        {
+            ViewBag.Ingredients = dataContext.Ingredients;
+            return View();
+        }
+
     }
 }
