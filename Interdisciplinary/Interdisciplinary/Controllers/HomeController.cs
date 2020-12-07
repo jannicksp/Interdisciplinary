@@ -27,6 +27,7 @@ namespace Interdisciplinary.Controllers
         }
         public IActionResult Fridge()
         {
+            ViewBag.Ingredients = dataContext.Ingredients;
             return View();
         }
 
