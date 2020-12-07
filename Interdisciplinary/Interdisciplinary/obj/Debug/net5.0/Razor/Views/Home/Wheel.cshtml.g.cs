@@ -27,6 +27,7 @@ using Interdisciplinary.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b680bd915e84299d4a67789bad82ea17658b1dd9", @"/Views/Home/Wheel.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2eea889594722046df27b3b9a37f4f8245f3fd39", @"/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12f4c8588e9379963aa53f7a1bdb1857f518eafe", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Wheel : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {

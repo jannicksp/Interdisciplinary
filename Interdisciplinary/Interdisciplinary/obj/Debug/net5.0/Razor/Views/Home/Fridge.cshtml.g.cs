@@ -27,6 +27,7 @@ using Interdisciplinary.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"24bc3307eefb1208f6f9c020b68def98961b0e2c", @"/Views/Home/Fridge.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2eea889594722046df27b3b9a37f4f8245f3fd39", @"/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"12f4c8588e9379963aa53f7a1bdb1857f518eafe", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Fridge : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
@@ -82,7 +83,7 @@ Write(ViewData["Title"]);
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<label for=\"ingridiens\">Vælg hvilke ingredienser du har tilgængelige til at lave drinks med</label>\r\n<br/>\r\n<select id=\"ingridiens\">\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24bc3307eefb1208f6f9c020b68def98961b0e2c4390", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24bc3307eefb1208f6f9c020b68def98961b0e2c4548", async() => {
                 WriteLiteral(" Vælg ingredienser");
             }
             );
@@ -96,7 +97,7 @@ Write(ViewData["Title"]);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24bc3307eefb1208f6f9c020b68def98961b0e2c5360", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24bc3307eefb1208f6f9c020b68def98961b0e2c5518", async() => {
                 WriteLiteral(" agurk");
             }
             );
@@ -134,7 +135,7 @@ Write(ingredient);
 #line hidden
 #nullable disable
             WriteLiteral("</ul>\r\n<br /><br /><br />\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24bc3307eefb1208f6f9c020b68def98961b0e2c7214", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24bc3307eefb1208f6f9c020b68def98961b0e2c7372", async() => {
                 WriteLiteral("\r\n    <button type=\"submit\"> Opdater køleskab</button>\r\n");
             }
             );
