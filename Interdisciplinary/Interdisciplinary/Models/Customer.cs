@@ -13,7 +13,7 @@ namespace Interdisciplinary.Models
         public string Password { get; set; }
         public string Email { get; set; }
 
-        //public virtual ICollection<Drink> Drinks { get; set; }
+        public virtual ICollection<Drink> Drinks { get; set; }
 
 
         public Customer() { }
