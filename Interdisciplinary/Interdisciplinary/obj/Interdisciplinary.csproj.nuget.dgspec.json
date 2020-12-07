@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\annal\\OneDrive\\Documents\\BAAA\\IDigenigen\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {}
+    "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\annal\\OneDrive\\Documents\\BAAA\\IDigenigen\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {
+    "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\annal\\OneDrive\\Documents\\BAAA\\IDigenigen\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
         "projectName": "Interdisciplinary",
-        "projectPath": "C:\\Users\\annal\\OneDrive\\Documents\\BAAA\\IDigenigen\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
-        "packagesPath": "C:\\Users\\annal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\annal\\OneDrive\\Documents\\BAAA\\IDigenigen\\Interdisciplinary\\Interdisciplinary\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\Interdisciplinary.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\interdisciplinary\\Interdisciplinary\\Interdisciplinary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\annal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
