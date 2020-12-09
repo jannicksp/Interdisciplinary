@@ -121,7 +121,7 @@ header{
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.ingridiens li::before {
+.chosen label::before {
     content: "✖";
     width: 10px;
     height: 10px;
