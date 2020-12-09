@@ -8,21 +8,49 @@
 <form action="" method="post" id="IngredientPicker">
     <label for="ingridiens">Vælg hvilke ingredienser du har tilgængelige til at lave drinks med</label>
     <br />
-    <select id="ingridiens" name="ingredient">
-        <option> Vælg ingredienser</option>
-        @foreach (Ingredient ingredient in Model.Ingredients)
-        {
-            <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId"}]'>
-                @ingredient.Name
-            </option>
-        }
-    </select>
-    <button type="submit">Tilføj ingrediens</button>
+    <select class="custom-select" id="ingridiens" name="ingredient">
+        <option class="option" disabled> Vælg ingredienser</option>
+        <optgroup label="Alcohol">
+
+            @foreach (Ingredient ingredient in Model.Ingredients)
+            {
+                if (ingredient.CategoryId == 1)
+                {
+                <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId"}]'>
+                    @ingredient.Name
+                </option>
+                }
+            }
+        </optgroup>
+         <optgroup label="Garnish">
+            @foreach (Ingredient ingredient in Model.Ingredients)
+            {
+                if (ingredient.CategoryId == 3)
+                {
+                <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId"}]'>
+                    @ingredient.Name
+                </option>
+                }
+            }
+        </optgroup>
+        <optgroup label="Softdrink">
+            @foreach (Ingredient ingredient in Model.Ingredients)
+            {
+                if (ingredient.CategoryId == 2)
+                {
+                <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId"}]'>
+                    @ingredient.Name
+                </option>
+                }
+            }
+        </optgroup>
+</select>
+    <button class="button" type="submit">Tilføj ingrediens</button>
     <br />
 </form>
 
 <form asp-controller="Drinks" method="post" id="ChosenIngredients" asp-action="Index">
     <div class="chosen"></div>
-    <button type="submit"> Opdater køleskab</button>
+    <button class="button" type="submit"> Opdater køleskab</button>
 </form>
 
