@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Interdisciplinary.Models;
+using Interdisciplinary.Models.ViewModels;
 using System.Linq;
 
 namespace Interdisciplinary.Data
@@ -21,10 +22,20 @@ namespace Interdisciplinary.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<DrinkIngredient> DrinkIngredients { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
+        public DbSet<IngredientDto> IngredientDto { get; set; }
+        public DbSet<DrinksToIngredients> DrinksToIngredients{ get; set; }
+
+       
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Ignore<IngredientDto>();
+            modelBuilder.Entity<DrinksToIngredients>(eb =>
+       {
+           eb.HasNoKey();
+       });
+
             //if we wanted to override default naming behaviour, and name table "Customer" instead of "Customers" for example
             //modelBuilder.Entity<Customer>().ToTable("Customer");
             //modelBuilder.Entity<Drink>().ToTable("Drink");

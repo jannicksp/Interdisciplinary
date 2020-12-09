@@ -4,14 +4,16 @@ using Interdisciplinary.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Interdisciplinary.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201209112602_Gaaaarrrrggghh2")]
+    partial class Gaaaarrrrggghh2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -597,26 +599,6 @@ namespace Interdisciplinary.Migrations
                             CategoryId = 3,
                             Name = "Sugar"
                         });
-                });
-
-            modelBuilder.Entity("Interdisciplinary.Models.ViewModels.DrinksToIngredients", b =>
-                {
-                    b.Property<string>("Amount")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("DrinkId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("DrinkName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IngredientId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("IngredientName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.ToTable("DrinksToIngredients");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
