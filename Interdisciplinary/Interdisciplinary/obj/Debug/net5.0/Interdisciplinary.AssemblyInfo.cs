@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Interdisciplinary-DBE375A7-5A1A-46FF-AC68-3C7C1FFD2663")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Interdisciplinary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]

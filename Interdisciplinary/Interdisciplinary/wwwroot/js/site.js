@@ -3,6 +3,25 @@
 
 // Write your JavaScript code.
 
+"use strict";
+const formPicker = document.querySelector("#IngredientPicker");
+let pickedIngredients = [];
+
+formPicker.addEventListener("submit", event => {
+    event.preventDefault();
+    let ingredient = JSON.parse(formPicker.elements.ingredient.options[formPicker.elements.ingredient.selectedIndex].getAttribute("data-value"));
+
+    document.querySelector("#ChosenIngredients .chosen").innerHTML += `<input type="checkbox" id="${ingredient[0].name}" name="selected" checked value="${ingredient[0].id}" hidden>
+  <label for="${ingredient[0].name}"> ${ingredient[0].name}</label><br>`
+
+   
+    });
+
+
+function addIngredient(e) {
+    console.log(e);
+}
+
 let up = document.getElementById('list');
 let down = document.getElementById('drink');
 let softdrink = ['Vand', 'Mælk', 'Saftevand', 'Cola'];
