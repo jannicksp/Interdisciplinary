@@ -1,9 +1,26 @@
-﻿@model IEnumerable<string>
+﻿@*@model IEnumerable<string>*@
+@model DrinksListViewModel
 
-<p>
-    @foreach (string Id in Model)
+
+    @foreach (DrinkViewModel drink in Model.Drinks)
     {
-       @Id
+        <p>
+
+        @drink.DrinkName
+        </p>
+        <ul>
+        @foreach(DrinksToIngredients ingredient in drink.Ingredients)
+        {
+            <li>
+
+            @ingredient.IngredientName
+            @ingredient.Amount
+            </li>
+        }
+
+
+        </ul>
+
     }
 
-</p>
+
