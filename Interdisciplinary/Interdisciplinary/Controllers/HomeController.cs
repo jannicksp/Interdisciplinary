@@ -39,6 +39,10 @@ namespace Interdisciplinary.Controllers
         {
             return View();
         }
+        public IActionResult Random()
+        {
+            return View();
+        }
 
 
     }
