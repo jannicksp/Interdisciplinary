@@ -11,9 +11,11 @@ a.navbar-brand {
 a {
   color: #0366d6;
 }
-a:hover {
-color: #D56868 !important;
-}
+    a:hover {
+        color: #D56868 !important;
+        background-color: #fff !important;
+        height: 100%;
+    }
     a:hover svg {
         fill: black;
     }
@@ -106,10 +108,10 @@ header{
     bottom: 0px;
     width:100%;
 }
-header svg{
-    fill: white;
-    width: 20%;
-}
+    header svg {
+        fill: white;
+        width: 20%;
+    }
 .form-inline {
     display: flex;
     justify-content: center;
