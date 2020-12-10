@@ -12,7 +12,7 @@ let ingridients = softdrink.concat(garnish, alcohol);
 
 
 up.innerHTML = "Click on the button to check "
-    + "get a random drink<br><br>" + softdrink + "," + garnish +"," + alcohol;
+    + "get a random drink<br><br>";
 
 function randomDrink() {
     down.innerHTML =
