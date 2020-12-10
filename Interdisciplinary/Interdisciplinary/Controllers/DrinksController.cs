@@ -7,6 +7,7 @@ using Interdisciplinary.Models;
 using Interdisciplinary.Models.ViewModels;
 using Interdisciplinary.Data;
 using Microsoft.EntityFrameworkCore;
+using Interdisciplinary.Infrastructure;
 
 namespace Interdisciplinary.Controllers
 {
@@ -22,11 +23,12 @@ namespace Interdisciplinary.Controllers
         }
 
 
-        //public IActionResult Index()
-        //{
+        public IActionResult Index()
+        {
+            DrinksListViewModel DrinksList = GetList();
+            return View(DrinksList);
 
-        //    return View(drinks)
-        //}
+        }
 
         [HttpPost]
         public IActionResult Index(IEnumerable<string> selected)
@@ -53,7 +55,7 @@ namespace Interdisciplinary.Controllers
                     }
 
 
-
+            SaveList(drinks);
 
             //dataContext.DrinksToIngredients.FromSqlRaw($"SELECT * from DrinksToIngredientsView where DrinkId = {parameter}").ToList()
 
@@ -63,9 +65,26 @@ namespace Interdisciplinary.Controllers
         }
 
 
+        private DrinksListViewModel GetList() { 
+            DrinksListViewModel DrinksList = HttpContext.Session.GetJson<DrinksListViewModel>("DrinksList"); 
+            //if (DrinksList == null) {
+            //    DrinksList = new DrinksListViewModel(); 
+            //    HttpContext.Session.SetJson("Cart", cart); 
+            //} 
+            return DrinksList; 
+        }
+
+        private void SaveList(DrinksListViewModel DrinksList) 
+        { 
+            HttpContext.Session.SetJson("DrinksList", DrinksList); 
+        }
 
 
-    
+
+
+
+
+
 
     }
 }
