@@ -173,3 +173,37 @@ header{
     z-index: 2;
     font-size: 1.5em;
 }
+
+
+/*DRINK RESULTS STYLING*/
+
+.drinkSearchResult {
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.drinkSearchResult .drinkName {
+    padding: 10px 20px;
+}
+
+    .drinkSearchResult .ingredientWrapper {
+        display: flex;
+        flex-direction: column;
+        padding-inline-end: 40px;
+    }
+    .drinkSearchResult .ingredientList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .drinkSearchResult .ingredientName {
+        display: flex;
+
+    }
+
+.drinkSearchResult .ingredientAmount {
+    display: grid;
+    grid-area: amount;
+
+}
