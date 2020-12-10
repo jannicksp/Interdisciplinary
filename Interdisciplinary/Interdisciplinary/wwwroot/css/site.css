@@ -185,25 +185,14 @@ header{
     padding: 10px 20px;
 }
 
-    .drinkSearchResult .ingredientWrapper {
-        display: flex;
-        flex-direction: column;
-        padding-inline-end: 40px;
-    }
-    .drinkSearchResult .ingredientList {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
+.drinkSearchResult .ingredientWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-inline-end: 40px;
+}
 
-    .drinkSearchResult .ingredientName {
-        display: flex;
-
-    }
-
-.drinkSearchResult .ingredientAmount {
-    display: grid;
-    grid-area: amount;
-
+.drinkSearchResult .ingredientList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
