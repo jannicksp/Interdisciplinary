@@ -14,6 +14,9 @@ a {
 a:hover {
 color: #D56868 !important;
 }
+    a:hover svg {
+        fill: black;
+    }
 
 
  a.text-dark:focus, a.text-dark:hover {
@@ -63,11 +66,7 @@ body {
     background-position: center;
     background-size: cover;
 }
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+
 
 .border-top {
   border-top: 1px solid #e5e5e5;
@@ -106,6 +105,10 @@ header{
     position: fixed;
     bottom: 0px;
     width:100%;
+}
+header svg{
+    fill: white;
+    width: 20%;
 }
 .form-inline {
     display: flex;
@@ -196,4 +199,13 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    header svg {
+        width: 5%;
+    }
 }
