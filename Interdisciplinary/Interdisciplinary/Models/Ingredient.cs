@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Interdisciplinary.Models
 {
     public class Ingredient
     {
         public int IngredientId { get; set; }
+
+        [Required, RegularExpression("^[a-zA-Z0-9]{1,99}$", ErrorMessage = "The name is required in correct format")]
         public string Name { get; set; }
         public string Amount { get; set; }
 
