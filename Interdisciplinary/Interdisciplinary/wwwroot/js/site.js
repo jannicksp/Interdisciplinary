@@ -14,12 +14,11 @@ formPicker.addEventListener("submit", event => {
     document.querySelector("#ChosenIngredients .chosen").innerHTML += `<div class="pickedIngredient"><input type="checkbox" id="${ingredient[0].name}" name="selected" checked value="${ingredient[0].id}" hidden>
   <label for="${ingredient[0].name}"> ${ingredient[0].name}</label><br></div>`
 
-    document.querySelector("#ChosenIngredients .chosen").lastElementChild.addEventListener("click", deletePicked)
-    
-
+    document.querySelectorAll("#ChosenIngredients .chosen div").forEach(element => {
+        element.removeEventListener("click", deletePicked);
+        element.addEventListener("click", deletePicked);
+    })
 });
-
-
 
 function deletePicked(e) {
     this.remove();
@@ -28,26 +27,7 @@ function deletePicked(e) {
 }
 
 
-//function addIngredient(e) {
-//    console.log(e);
-//}
 
-//let up = document.getElementById('list');
-//let down = document.getElementById('drink');
-//let softdrink = ['Vand', 'Mælk', 'Saftevand', 'Cola'];
-//let garnish = ['Agurk', 'Gulerød', 'Appelsin', 'Citron'];
-//let alcohol = ['Rom', 'Snaps', 'Vodka', 'Gin'];
-//let ingridients = softdrink.concat(garnish, alcohol);
-
-
-//up.innerHTML = "Click on the button to check "
-//    + "get a random drink<br><br>" + softdrink + "," + garnish +"," + alcohol;
-
-//function randomDrink() {
-//    down.innerHTML =
-//        ingridients[Math.floor(Math.random() * ingridients.length)];
-        
-//}  
 
 
 
