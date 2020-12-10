@@ -22,6 +22,12 @@ namespace Interdisciplinary.Controllers
         }
 
 
+        //public IActionResult Index()
+        //{
+
+        //    return View(drinks)
+        //}
+
         [HttpPost]
         public IActionResult Index(IEnumerable<string> selected)
         {
