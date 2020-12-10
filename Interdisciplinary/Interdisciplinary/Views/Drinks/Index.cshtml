@@ -4,22 +4,29 @@
 
     @foreach (DrinkViewModel drink in Model.Drinks)
     {
-        <p>
 
+<section class="drinkSearchResult">
+
+    <h2 class="drinkName">
         @drink.DrinkName
-        </p>
-        <ul>
-        @foreach(DrinksToIngredients ingredient in drink.Ingredients)
+    </h2>
+    <ul class="ingredientWrapper">
+        @foreach (DrinksToIngredients ingredient in drink.Ingredients)
         {
-            <li>
-
-            @ingredient.IngredientName
-            @ingredient.Amount
+            <li class="ingredientList">
+                <p class="ingredientName">
+                    @ingredient.IngredientName
+                </p>
+                <p class="ingredientAmount">
+                    @ingredient.Amount
+                </p>
+                
             </li>
         }
 
 
-        </ul>
+    </ul>
+</section>
 
     }
 
