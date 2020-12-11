@@ -51,10 +51,11 @@
 
 <form asp-controller="Drinks" method="post" id="ChosenIngredients" asp-action="Index">
     <div class="chosen"></div>
-    <button class="button" type="submit"> Find exsisting cocktails</button>
+    <button class="button" type="button"> Find exsisting cocktails</button>
 </form>
 
 <form method="post" id="getRandom" asp-controller="Random" asp-action="Index">
     <button class="button randomDrinkSubmit" type="button"> Generate your own custom cocktail</button>
 </form>
+<p class="error-message"></p>
 <script src="~/js/site.js" asp-append-version="true"></script>

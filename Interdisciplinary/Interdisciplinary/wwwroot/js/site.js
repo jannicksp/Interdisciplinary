@@ -3,6 +3,7 @@
 const formPicker = document.querySelector("#IngredientPicker");
 let pickedIngredients = [];
 let formRandom = document.querySelector(".randomDrinkSubmit");
+let checkboxes = document.querySelectorAll('#ChosenIngredients input[type=checkbox]:checked');
 
 formPicker.addEventListener("submit", event => {
     event.preventDefault();
@@ -21,13 +22,22 @@ function deletePicked(e) {
     this.remove();
 }
 
+document.querySelector("#ChosenIngredients button").addEventListener("click", event => {
 
+
+
+    if (document.querySelector("#ChosenIngredients").elements.selected == undefined) {
+        document.querySelector(".error-message").innerHTML = "Please choose at least one ingredient"
+    } else {
+        document.querySelector(".error-message").innerHTML = ""
+        document.querySelector("#ChosenIngredients").submit();
+    }
+});
 
 
 
 formRandom.addEventListener("click", event => {
     event.preventDefault();
-    let checkboxes = document.querySelectorAll('#ChosenIngredients input[type=checkbox]:checked');
 
     checkboxes.forEach(checkbox => {
         console.log(checkbox.getAttribute("data-cat"));
