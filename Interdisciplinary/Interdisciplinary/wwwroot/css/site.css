@@ -184,7 +184,10 @@ header{
 /*DRINK RESULTS STYLING*/
 
 .drinkSearchResult {
+    display: grid;
+    grid-template-rows: 5vh 2vh auto 2vh;
     background-color: rgba(0,0,0, 0.4);
+    margin-bottom: 2vh;
 }
 
 .drinkSearchResult .drinkName {
@@ -193,8 +196,10 @@ header{
 
 .drinkSearchResult .ingredientWrapper {
     display: flex;
+    grid-row-start: 3;
     flex-direction: column;
     padding-inline-end: 40px;
+    margin-bottom: 0;
 }
 
 .drinkSearchResult .ingredientList {
@@ -209,5 +214,8 @@ header{
 
     header svg {
         width: 5%;
+    }
+    .drinkSearchResult {
+        grid-template-rows: 5vh 2vh auto 2vh;
     }
 }
