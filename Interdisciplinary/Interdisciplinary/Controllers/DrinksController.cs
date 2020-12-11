@@ -22,12 +22,14 @@ namespace Interdisciplinary.Controllers
         }
 
 
-        public IActionResult Index()
-        {
+        public IActionResult Index() {
             DrinksListViewModel DrinksList = GetList();
-            return View(DrinksList);
-
-        }
+            if (DrinksList == null)
+            {
+                DrinksList = new DrinksListViewModel();
+                DrinksList.Drinks = new List<DrinkViewModel>();
+            }
+            return View(DrinksList);}
 
         [HttpPost]
         public IActionResult Index(IEnumerable<string> selected)

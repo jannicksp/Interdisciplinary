@@ -1,9 +1,19 @@
-﻿@*@model IEnumerable<string>*@
-@model DrinksListViewModel
+﻿@model DrinksListViewModel
 
-<a class="button" asp-area="" asp-controller="Home" asp-action="Index">Go back</a>
-    @foreach (DrinkViewModel drink in Model.Drinks)
-    {
+<a class="button" asp-area="" asp-controller="Home" asp-action="Index">Tilbage</a>
+
+@if(Model.Drinks.Count() == 0)
+{
+<section>
+
+    <h2>Please choose your ingredients first in the fridge!</h2>
+</section>
+}
+else
+{
+
+@foreach (DrinkViewModel drink in Model.Drinks)
+{
 
 <section class="drinkSearchResult">
 
@@ -11,23 +21,23 @@
         @drink.DrinkName
     </h2>
     <ul class="ingredientWrapper">
-        @foreach (DrinksToIngredients ingredient in drink.Ingredients)
-        {
-            <li class="ingredientList">
-                <p class="ingredientName">
-                    @ingredient.IngredientName
-                </p>
-                <p class="ingredientAmount">
-                    @ingredient.Amount
-                </p>
-                
-            </li>
-        }
 
+        @foreach (DrinksToIngredients ingredient in drink.Ingredients)
+{
+        <li class="ingredientList">
+            <p class="ingredientName">
+                @ingredient.IngredientName
+            </p>
+            <p class="ingredientAmount">
+                @ingredient.Amount
+            </p>
+        </li>
+}
+
+        }
 
     </ul>
 </section>
 
-    }
-
-
+ }
+}
