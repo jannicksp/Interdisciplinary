@@ -9,7 +9,7 @@ formPicker.addEventListener("submit", event => {
     let ingredient = JSON.parse(formPicker.elements.ingredient.options[formPicker.elements.ingredient.selectedIndex].getAttribute("data-value"));
 
     document.querySelector("#ChosenIngredients .chosen").innerHTML += `<div class="pickedIngredient"><input type="checkbox" id="${ingredient[0].name}" name="selected" checked value="${ingredient[0].id}" hidden data-cat="${ingredient[0].category}">
-  <label for="${ingredient[0].name}"> ${ingredient[0].name}</label><br></div>`
+  <label class="rubrik" for="${ingredient[0].name}"> ${ingredient[0].name}</label><br></div>`
 
     document.querySelectorAll("#ChosenIngredients .chosen div").forEach(element => {
         element.removeEventListener("click", deletePicked);
