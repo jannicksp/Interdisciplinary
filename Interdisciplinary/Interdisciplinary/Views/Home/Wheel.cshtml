@@ -5,18 +5,30 @@
 
 
 <h1>Who drinks?</h1>
-<p id="list" style="font-size: 15px; font-weight: bold;">
+@*<p id="list" style="font-size: 15px; font-weight: bold;">
 </p>
 
 <label for="players">Add more players?</label>
-<input id="players"/>
-<button  type="submit">Add</button>
+<input id="players" />
+<button type="submit">Add</button>
 <br />
 
 <button class="button" id="button" onclick="randomName()">Spin the Wheel</button>
 
 <p id="drink" style="font-size: 24px; font-weight: bold; color: #D56868;">
-</p>
+</p>*@
 
+
+<div class="container">
+    <div class="control">
+        <br> <input type="text" id="input" placeholder="Enter names here"> <button id="addButton"> Add </button> <button id="shuffleButton"> Pick winner </button>
+    </div>
+    <div id="mother">
+
+    </div>
+    <div class="winner">
+        <h3 class="winner_is"> Winner: <br> <span id="name"></span></h3>
+    </div>
+</div>
 
 <script src="~/js/random.js" asp-append-version="true"></script>
