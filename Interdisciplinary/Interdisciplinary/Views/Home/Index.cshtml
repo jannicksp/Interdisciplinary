@@ -6,30 +6,30 @@
 <h1>@ViewData["Title"]</h1>
 
 <form action="" method="post" id="IngredientPicker">
-    <label class="rubrik" for="ingridiens">Choose your ingredients</label>
+    <label class="rubrik" for="ingridiens">Vælg hvilke ingredienser du har tilgængelige til at lave drinks med</label>
     <br />
     <select class="drink-select" id="ingridiens" name="ingredient">
-        <option class="option" disabled> Pick Ingredients</option>
+        <option class="option" disabled> Vælg ingredienser</option>
         <optgroup label="Alcohol">
 
             @foreach (Ingredient ingredient in Model.Ingredients)
             {
                 if (ingredient.CategoryId == 1)
                 {
-                <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId"}]'>
-                    @ingredient.Name
-                </option>
+                    <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId", "category": "@ingredient.CategoryId"}]'>
+                        @ingredient.Name
+                    </option>
                 }
             }
         </optgroup>
-         <optgroup label="Garnish">
+        <optgroup label="Garnish">
             @foreach (Ingredient ingredient in Model.Ingredients)
             {
                 if (ingredient.CategoryId == 3)
                 {
-                <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId"}]'>
-                    @ingredient.Name
-                </option>
+                    <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId", "category": "@ingredient.CategoryId"}]'>
+                        @ingredient.Name
+                    </option>
                 }
             }
         </optgroup>
@@ -38,20 +38,23 @@
             {
                 if (ingredient.CategoryId == 2)
                 {
-                <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId"}]'>
-                    @ingredient.Name
-                </option>
+                    <option data-value='[{"name":"@ingredient.Name","id": "@ingredient.IngredientId", "category": "@ingredient.CategoryId"}]'>
+                        @ingredient.Name
+                    </option>
                 }
             }
         </optgroup>
-</select>
-    <button class="button" type="submit">Add ingredient</button>
+    </select>
+    <button class="button" type="submit">Tilføj ingrediens</button>
     <br />
 </form>
 
 <form asp-controller="Drinks" method="post" id="ChosenIngredients" asp-action="Index">
     <div class="chosen"></div>
-    <button class="button" type="submit"> Search for matching cocktails</button>
-    <button class="button" type="button"> Generate random cocktail</button>
+    <button class="button" type="submit"> Find Eksisterende cocktails</button>
+</form>
+
+<form method="post" id="getRandom" asp-controller="Random" asp-action="Index">
+    <button class="button randomDrinkSubmit" type="button"> Generér dine egne cocktails</button>
 </form>
 <script src="~/js/site.js" asp-append-version="true"></script>

@@ -14,7 +14,6 @@ namespace Interdisciplinary.Controllers
     public class DrinksController : Controller
     {
         private ApplicationDbContext dataContext;
-        //private string parameters;
         private DrinksListViewModel drinks = new DrinksListViewModel();
         private List<DrinkIngredient> ids;
         public DrinksController(ApplicationDbContext dbContext)
@@ -36,7 +35,6 @@ namespace Interdisciplinary.Controllers
 
             drinks.Drinks = new List<DrinkViewModel>();
             string ingredientIds = string.Join(",", selected);
-            //ids = dataContext.DrinkIngredients.FromSqlRaw($"SELECT * from DrinkIngredients where IngredientId in ({parameters})").ToList();
             ids = dataContext.DrinkIngredients.FromSqlRaw($"SELECT * from DrinkIngredients where IngredientId in ({ingredientIds})").ToList();
 
             foreach (DrinkIngredient drinkid in ids) {
@@ -57,7 +55,6 @@ namespace Interdisciplinary.Controllers
 
             SaveList(drinks);
 
-            //dataContext.DrinksToIngredients.FromSqlRaw($"SELECT * from DrinksToIngredientsView where DrinkId = {parameter}").ToList()
 
             return View(drinks);
 
@@ -67,10 +64,6 @@ namespace Interdisciplinary.Controllers
 
         private DrinksListViewModel GetList() { 
             DrinksListViewModel DrinksList = HttpContext.Session.GetJson<DrinksListViewModel>("DrinksList"); 
-            //if (DrinksList == null) {
-            //    DrinksList = new DrinksListViewModel(); 
-            //    HttpContext.Session.SetJson("Cart", cart); 
-            //} 
             return DrinksList; 
         }
 
