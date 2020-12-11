@@ -3,7 +3,6 @@
 const formPicker = document.querySelector("#IngredientPicker");
 let pickedIngredients = [];
 let formRandom = document.querySelector(".randomDrinkSubmit");
-let checkboxes = document.querySelectorAll('#ChosenIngredients input[type=checkbox]:checked');
 
 formPicker.addEventListener("submit", event => {
     event.preventDefault();
@@ -37,23 +36,21 @@ document.querySelector("#ChosenIngredients button").addEventListener("click", ev
 
 
 formRandom.addEventListener("click", event => {
-    event.preventDefault();
+  //  event.preventDefault();
+    let checkboxes = document.querySelectorAll('#ChosenIngredients input[type=checkbox]:checked');
+    if (document.querySelector("#ChosenIngredients").elements.selected == undefined) {
+        document.querySelector(".error-message").innerHTML = "Please choose at least one ingredient"
+    } else {
+        checkboxes.forEach(checkbox => {
+            console.log(checkbox.getAttribute("data-cat"));
+            pickedIngredients.push({ "name": checkbox.id, "category": checkbox.getAttribute("data-cat") });
 
-    checkboxes.forEach(checkbox => {
-        console.log(checkbox.getAttribute("data-cat"));
-        pickedIngredients.push({ "name": checkbox.id, "category": checkbox.getAttribute("data-cat") });
+        })
 
-    })
+        let session = localStorage.setItem("session", JSON.stringify(pickedIngredients));
 
-
-
-
-    let session = localStorage.setItem("session", JSON.stringify(pickedIngredients));
-
-
-
-    document.querySelector("#getRandom").submit()
-
+        document.querySelector("#getRandom").submit()
+    }
 
 
 
