@@ -16,6 +16,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Interdisciplinary.Data.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
-    <NameOfLastUsedPublishProfile>CockyTails - Web Deploy</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>Interdiscaplinary - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
